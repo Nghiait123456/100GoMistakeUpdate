@@ -30,7 +30,7 @@ func countEmptyLines(reader io.Reader) (int, error) {
 }
 
 func main() {
-	file, err := os.Open("main.go")
+	file, err := os.Open("db.go")
 	if err != nil {
 		panic(err)
 	}
