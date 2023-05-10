@@ -1,8 +1,11 @@
-# 100 Go Mistakes and How to Avoid Them
+# Refer 100 Go Mistakes and How to Avoid Them
 
 Source code and community space of
 📖 [100 Go Mistakes and How to Avoid Them](https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them),
-published by Manning in 2022.
+published by Manning in 2022. </br>
+
+In this document, in addition to referring to the author's main document, I add my test case and best practices for the
+cases mentioned by the author. </br>
 
 ## Book Description
 
@@ -21,11 +24,6 @@ developer.
 > Not having this will be the 101st mistake a Go programmer could make.
 
 – _Anupam Sengupta_
-
-## Where to Buy?
-
-* [Manning.com](https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them)
-*
 
 Amazon: [.com](https://www.amazon.com/dp/1617299596), [.co.uk](https://www.amazon.co.uk/dp/B0BBSNJR6B), [.de](https://www.amazon.de/dp/B0BBHQD8BQ), [.fr](https://www.amazon.fr/100-Mistakes-How-Avoid-Them/dp/1617299596), [.in](https://www.amazon.in/dp/B0BBHQD8BQ), [.co.jp](https://www.amazon.co.jp/dp/B0BBHQD8BQ), [.es](https://www.amazon.es/dp/B0BBHQD8BQ), [.it](https://www.amazon.it/dp/B0BBHQD8BQ), [.com.br](https://www.amazon.com.br/dp/B0BBHQD8BQ)
 
@@ -166,8 +164,10 @@ testing more complex. In most cases, initializations should be handled as specif
 link: https://rezwanul-haque.hashnode.dev/golang-mistakes-2-misusing-init-functions </br>
 
 My experience in best practice, only use init() when you don't care about the order in which init() runs nor the data.
-data from init(), and there is a need to call a function before main. Usually config data. Ex: You have a log, call in many places
-when main starts, its config modes are usually called from init(). Dev doesn't care too much about the order of running init and data
+data from init(), and there is a need to call a function before main. Usually config data. Ex: You have a log, call in
+many places
+when main starts, its config modes are usually called from init(). Dev doesn't care too much about the order of running
+init and data
 that init. </br>
 
 #### Overusing getters and setters (#4)
