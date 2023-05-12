@@ -178,7 +178,9 @@ efficiency and blindly following certain idioms should be the way to go.
 #### Interface pollution (#5)
 
 Abstractions should be discovered, not created. To prevent unnecessary complexity, create an interface when you need it
-and not when you foresee needing it, or if you can at least prove the abstraction to be a valid one.
+and not when you foresee needing it, or if you can at least prove the abstraction to be a valid one. </br>
+To define that thin line, the basic condition is to understand the feature and understand the domain. To understand
+about domain is not easy, domain expert is always rare to find. </br>
 
 #### Interface on the producer side (#6)
 
